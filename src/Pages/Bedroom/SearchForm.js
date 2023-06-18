@@ -11,18 +11,7 @@ import { useState } from 'react';
         //  const navigate=useNavigate()
        
          
-         const handleSubmit=(event)=>{
-           event.preventDefault()
-           
-           const query={
-             location:location,
-             from:arrivalDate,
-             to:departureDate
-           }
-         
-           // console.log(query);
-       
-         }
+      
        
        
     return (
@@ -44,7 +33,6 @@ import { useState } from 'react';
               type='text'
               name='location'
               value={location}
-              onChange={event=>setLocation(event.target.value)}
               required
               placeholder='Add city, Landmark or address'
               className=' w-full mt-1 p-1 text-gray-700 bg-white   focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40'
@@ -56,7 +44,6 @@ import { useState } from 'react';
               <div>
                 <p className='block text-sm text-gray-500'>Arrival</p>
                 <DatePicker 
-                onChange={(date)=>setArrivalDate(date)}
                  selected={arrivalDate} 
                  className='w-2/3' 
                    
@@ -82,7 +69,7 @@ import { useState } from 'react';
   
           <div className='mt-6'>
 
-<button className="btn text-white bg-[#FF385C] w-full">Check Availibity</button>
+<label htmlFor="my-modal-3" className="btn text-white bg-[#FF385C] w-full">Check Availibity</label>
 
           </div>
         </form>

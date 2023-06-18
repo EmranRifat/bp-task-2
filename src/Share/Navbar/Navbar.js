@@ -47,7 +47,9 @@ const Navbar = () => {
 
 
     <ul className="menu menu-horizontal px-1">
-<Link to="/comingsoon" className="btn text-gray-600 btn-ghost">Airbnb your home</Link>
+    <label htmlFor="my-modal-3" className="btn  text-gray-600 btn-ghost rounded" >Airbnb your home</label>
+
+
 <button className="btn text-gray-600 btn-ghost rounded">  <TbWorld className=" text-xl"></TbWorld>
 </button>
 

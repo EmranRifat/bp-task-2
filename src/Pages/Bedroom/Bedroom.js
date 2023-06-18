@@ -6,29 +6,23 @@ import bed3 from '../../Assets/bed3.png'
 import bed4 from '../../Assets/bed4.png'
 import bed from '../../Assets/bed.png'
 import { Link } from 'react-router-dom';
+import Modal from '../../Share/Modal';
 const Bedroom = () => {
     return (
         <div >
 <div className='mt-4'>
 <h1 className='text-2xl font-semibold '>Enjoy historic Valencia and close to the beach.</h1>
-<div className='md:flex justify-between '>
-<div>
-<Tab.Group>
-      <Tab.List className="md:flex flex-wrap">
-        <Tab>171 reviews ./ </Tab>
-        <p className='text-gray-600'> Superhost ./ </p>
-        <Tab> Valencia, Spain</Tab>
-      </Tab.List>
-      <Tab.Panels>
-        <Tab.Panel>Content 1</Tab.Panel>
-        <Tab.Panel>Content 2</Tab.Panel>
-        <Tab.Panel>Content 3</Tab.Panel>
-      </Tab.Panels>
-    </Tab.Group>
+<div className='md:flex display-block hidden justify-between '>
+
+<div className="md:flex py-2 display-block hidden">
+<p>★4.87.</p>
+<label htmlFor="my-modal-3" className="link link-neutral font-semibold px-4">171 reviews</label>
+<p>Super host</p>
+
 </div>
 <div className='-mt-8'>
-        <Link to='/comingsoon' className='btn btn-ghost' >Share</Link>
-        <Link to='/comingsoon' className='btn btn-ghost' >Save</Link>
+   <label htmlFor="my-modal-3" className="btn  btn-ghost">Share</label>
+   <label htmlFor="my-modal-3" className="btn  btn-ghost">Save</label>
     </div>
 </div>
     
@@ -45,7 +39,7 @@ const Bedroom = () => {
 
   </div>
 </div>
-
+<Modal className="lg:hidden"></Modal>
 
 
 </div>
